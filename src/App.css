@@ -6,7 +6,8 @@
   width: 800px;
 }
 .grass {
-  background-image: url('https://rawgit.com/coens97/duckhunt/master/images/back.png?raw=true');
+  /* background-image: url('https://rawgit.com/coens97/duckhunt/master/images/back.png?raw=true'); */
+  background-image: url('back.png');
   background-size: 100% 100%;
   bottom: 0;
   height: 112px;
@@ -16,7 +17,8 @@
   z-index: 2;
 }
 .tree {
-  background-image: url('https://rawgit.com/coens97/duckhunt/master/images/tree.png?raw=true');
+  /* background-image: url('https://rawgit.com/coens97/duckhunt/master/images/tree.png?raw=true'); */
+  background-image: url('tree.png');
   background-size: 100% 100%;
   bottom: 45px;
   height: 260px;
@@ -29,7 +31,7 @@
   animation: play 0.3s steps(3) infinite;
   background-position-x: 0;
   background-position-y: -146px;
-  background: url('https://rawgit.com/coens97/duckhunt/master/images/theDuck.png?raw=true');
+  background: url('theDuck.png');
   border: 5px transparent;
   height: 74px;
   position: absolute;
