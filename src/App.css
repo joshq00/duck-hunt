@@ -1,0 +1,136 @@
+.scene {
+  background-color: #42b9fd;
+  cursor: crosshair;
+  height: 800px;
+  position: relative;
+  width: 800px;
+}
+.grass {
+  background-image: url('https://rawgit.com/coens97/duckhunt/master/images/back.png?raw=true');
+  background-size: 100% 100%;
+  bottom: 0;
+  height: 112px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+.tree {
+  background-image: url('https://rawgit.com/coens97/duckhunt/master/images/tree.png?raw=true');
+  background-size: 100% 100%;
+  bottom: 45px;
+  height: 260px;
+  left: 5%;
+  position: absolute;
+  width: 173px;
+  z-index: 1;
+}
+.duck {
+  animation: play 0.3s steps(3) infinite;
+  background-position-x: 0;
+  background-position-y: -146px;
+  background: url('https://rawgit.com/coens97/duckhunt/master/images/theDuck.png?raw=true');
+  border: 5px transparent;
+  height: 74px;
+  position: absolute;
+  position: absolute;
+  width: 75px;
+  z-index: 1;
+}
+
+.duck.right {
+  background-position-y: -146px;
+}
+
+.duck.left {
+  background-position-y: -219px;
+}
+
+.duck.down.left, .duck.up.left {
+  background-position-y: 0;
+}
+
+.duck.down.right, .duck.up.right {
+  background-position-y: -73px;
+}
+
+.duck.shot {
+  background-position-y: -292px;
+  /* animation: shot 3s steps(1) alternate infinite; */
+
+}
+
+.duck.dead {
+  background-position-y: -365px;
+}
+
+@keyframes shot {
+  0% {
+    background-position-x: 0px;
+    background-position-y: -292px;
+  }
+  5% {
+    background-position-x: -73px;
+  }
+  10% {
+    background-position-x: -146px;
+    background-position-y: -292px;
+  }
+  15% {
+    background-position-x: 0;
+  }
+  20% {
+    background-position-x: -146px;
+  }
+  25% {
+    background-position-x: 0;
+    background-position-y: -365px;
+  }
+  30% {
+    background-position-x: -73px;
+  }
+  35% {
+    background-position-x: -146px;
+  }
+  40% {
+    background-position-x: 0;
+  }
+  45% {
+    background-position-x: -73px;
+  }
+  50% {
+    background-position-x: -146px;
+  }
+
+  70% {
+    background-position-x: 0px;
+    background-position-y: -365px;
+  }
+  90% {
+    background-position-x: -146px;
+    background-position-y: -365px;
+  }
+  100% {
+    background-position-x: -73px;
+    background-position-y: -365px;
+  }
+}
+
+@keyframes die {
+  30% {
+    background-position-x: -225px;
+  }
+  40% {
+    background-position-x: 0;
+    background-position-y: -365px;
+  }
+  70% {
+    background-position-x: -225px;
+    background-position-y: -365px;
+  }
+}
+@keyframes play {
+  100% {
+    background-position-x: -225px;
+  }
+}
